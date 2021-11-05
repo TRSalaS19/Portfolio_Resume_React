@@ -43,7 +43,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1500;
 
     opacity: 0;
@@ -94,7 +94,7 @@
 
   // functionality
   &__checkbox:checked ~ &__background {
-    transform: scale(80);
+    transform: scale(100);
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;
