@@ -1,0 +1,53 @@
+.topBrand {
+  background-color: $main-black-color;
+  color: $main-yellow-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  height: 5vh;
+
+  &__brand-logo {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid $main-yellow-color;
+
+    transition: all 0.2 ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1) skewY(-5deg);
+      box-shadow: 0 0.5rem 1rem rgba($main-yellow-color, 1);
+    }
+  }
+
+  &__info-container {
+    font-size: $default-font;
+    display: flex;
+    border-bottom: 3px solid $main-yellow-color;
+    transition: all 0.2 ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1) skewY(5deg);
+      box-shadow: 0 0.5rem 1rem rgba($main-yellow-color, 1);
+    }
+
+    .header-icon {
+      margin-right: 5px;
+    }
+    &:last-child {
+      margin-right: 2.5rem;
+      transition: all 0.5 ease;
+
+      &:hover {
+        transform: scale(1.1) skewY(-5deg);
+      }
+    }
+  }
+}

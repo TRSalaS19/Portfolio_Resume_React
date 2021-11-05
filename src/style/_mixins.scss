@@ -1,0 +1,11 @@
+@mixin black-and-white {
+  filter: grayscale(100%);
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
