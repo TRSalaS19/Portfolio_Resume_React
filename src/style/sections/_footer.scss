@@ -1,5 +1,5 @@
 .footer_container {
-  height: 60vh;
+  height: 100%;
   color: $main-yellow-color;
   background-color: $main-black-color;
 }
@@ -7,7 +7,7 @@
 .footer {
   font-size: 3.5rem;
   display: flex;
-  height: 60vh;
+  height: 100%;
   justify-content: center;
 
   &__left-side {
