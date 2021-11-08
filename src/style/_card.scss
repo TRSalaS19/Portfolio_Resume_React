@@ -1,13 +1,13 @@
 .card-master {
   height: 130vh;
-  width: 100%;
+  width: calc(100% - 2px);
   display: flex;
   overflow: hidden;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   position: relative;
-  // border: 1px solid $main-yellow-color;
+  border: 1px solid $main-yellow-color;
   background-image: radial-gradient(
     closest-side,
     $color-white,

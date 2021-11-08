@@ -5,8 +5,11 @@ function About() {
     <div className="about-me" id="about">
       <div className="about-me__top">
         <div className="about-me__heading">
-          <h2>Hi, I'm Gustavo.</h2>
           <p>Thank you for Visiting my Page</p>
+          <span>
+            My name is,
+            <h2>Gustavo</h2>
+          </span>
         </div>
         <div className="about-me__intro">
           <p>
@@ -22,7 +25,7 @@ function About() {
       </div>
       <div className="about-me__bottom">
         <div className="about-me__bottom-container">
-          <div className="about-me__skills-column heading1">
+          <div className="about-me__skills-column">
             <div className="about-me__skills-icon">
               <i className="fas fa-file-code"></i>
             </div>

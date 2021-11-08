@@ -1,34 +1,54 @@
 .about-me {
   color: $main-yellow-color;
-  position: relative;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
 
   &__top {
-    height: 50vh;
+    height: 75%;
+    width: calc(100% - 2px);
     background-color: $main-black-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 0 15rem;
-    line-height: 4rem;
     border: 1px solid $main-yellow-color;
   }
   &__heading {
     font-size: 4rem;
     text-align: center;
-    line-height: 5rem;
 
     p {
-      color: $color-white;
+      font-size: 4rem;
+      background-image: radial-gradient(
+        closest-side,
+        $color-white,
+        $main-yellow-color 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    h2 {
+      font-size: 7rem;
+      background-image: radial-gradient(
+        closest-side,
+        $color-white,
+        $main-yellow-color 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
   &__intro {
     font-size: 2.5rem;
+    padding: 0 25rem;
 
     a {
       color: $color-white;
-      text-decoration: none;
+
       transition: all 0.5s ease;
 
       &:hover {
@@ -42,20 +62,21 @@
       $main-yellow-color,
       $main-black-color 50%
     );
-    height: 75vh;
+    height: 100%;
   }
 
   &__bottom-container {
     display: flex;
     justify-content: center;
+    height: 100%;
+    // width: 25%;
   }
 
   &__skills-column {
     background-color: $main-black-color;
+    width: 25%;
     color: $color-white;
     display: flex;
-    height: 85vh;
-    width: 25%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,22 +84,8 @@
     // border-radius: 5px;
     font-size: $default-font;
     border: 1px solid $main-yellow-color;
-
-    &:not(:last-child) {
-      position: absolute;
-      top: 32%;
-      left: 25%;
-    }
-    &:last-child {
-      position: absolute;
-      top: 32%;
-      left: 50%;
-    }
   }
 
-  // .heading1 {
-  //   padding-top: 4rem;
-  // }
   &__skills-icon {
     font-size: 4rem;
     background-image: radial-gradient(
@@ -104,8 +111,8 @@
 
   &__skills-description {
     color: $color-white;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
   }
   &__skills-languages {
     h4 {
