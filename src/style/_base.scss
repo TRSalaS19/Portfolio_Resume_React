@@ -27,6 +27,12 @@ html {
   }
 }
 
+body {
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
 /*
 font-family: 'Anton', sans-serif;
 font-family: 'Roboto Mono', monospace;

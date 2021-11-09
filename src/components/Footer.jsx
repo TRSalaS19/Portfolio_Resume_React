@@ -44,21 +44,16 @@ function Footer() {
           </div>
         </div>
         <div className="footer__right-side">
-          <div className="footer__contact" id="contact">
-            <div className="footer__contact-img">
-              <img src={contactImg} alt="shake" />
-            </div>
-            <div className="footer__right-message-detail">
-              <h2>Message Me</h2>
-              <form
-                action="mailto:gruiz0803@icloud.com"
-                onSubmit={handleSubmit}
-              >
-                <input type="text" placeholder="Email" />
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
+          <div className="footer__contact-img">
+            <img src={contactImg} alt="shake" />
+          </div>
+          <div className="footer__right-message-detail">
+            <h2>Message Me</h2>
+            <form action="mailto:gruiz0803@icloud.com" onSubmit={handleSubmit}>
+              <input type="text" placeholder="Email" />
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
       </footer>

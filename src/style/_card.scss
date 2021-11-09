@@ -230,4 +230,7 @@
   @include respond(tab-land) {
     width: 40vw;
   }
+  @include respond(phone) {
+    width: 60vw;
+  }
 }
