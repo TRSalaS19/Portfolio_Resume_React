@@ -16,7 +16,7 @@
   }
 
   @include respond(phone) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   &__left-side {
@@ -104,8 +104,9 @@
         }
 
         @include respond(phone) {
-          width: 75%;
-          transform: translateX(15%);
+          width: 60%;
+          transform: translateX(30%);
+          padding: 0;
         }
       }
     }
@@ -119,6 +120,11 @@
 
       @include respond(tab-port) {
         padding: 3rem 0;
+      }
+
+      @include respond(phone) {
+        padding: 0;
+        padding-bottom: 2rem;
       }
 
       form {
@@ -150,6 +156,7 @@
         height: 3rem;
         border-radius: 5px;
         text-align: center;
+        transition: all 1s ease;
 
         &:active,
         &:focus {
@@ -163,6 +170,7 @@
         height: 10rem;
         border-radius: 5px;
         text-align: center;
+        transition: all 1s ease;
 
         &:active,
         &:focus {
@@ -193,6 +201,10 @@
         &:hover {
           transform: scale(0.9) skew(-2deg, 2deg);
           box-shadow: 0 1rem 1rem rgba($main-yellow-color, 1);
+        }
+
+        @include respond(phone) {
+          padding-bottom: 1rem;
         }
       }
     }

@@ -50,6 +50,7 @@
       // border-bottom: 2px solid $main-yellow-color;
       transition: all 0.5s ease;
       cursor: pointer;
+      border-radius: 10%;
 
       &:hover {
         transform: scale(1.1) skewY(5deg);

@@ -31,16 +31,13 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__info-container">
-            <i className="fas fa-mobile-alt footer__contact-icon"></i>
             <p>510-417-6757</p>
           </div>
           <div className="footer__info-container">
-            <i className="fas fa-envelope-square footer__contact-icon"></i>
             <p>GRuiSalas@icloud.com</p>
           </div>
           <div className="footer__copyright">
-            Built by Gustavo Salas &copy; {new Date().getFullYear()} by Gustavo
-            Salas.
+            Built by Gustavo Salas &copy; {new Date().getFullYear()}.
           </div>
         </div>
         <div className="footer__right-side">

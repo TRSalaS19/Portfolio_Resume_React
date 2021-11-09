@@ -20,6 +20,11 @@
     text-align: center;
     cursor: pointer;
 
+    @include respond(big-desktop) {
+      height: 4rem;
+      width: 4rem;
+    }
+
     @include respond(tab-land) {
       top: 15rem;
       right: 2rem;
@@ -44,6 +49,11 @@
     );
     z-index: 1000;
     transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(big-desktop) {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
 
     @include respond(tab-land) {
       top: 15rem;
@@ -122,6 +132,10 @@
     margin-top: 3.5rem;
     transition: all 0.5s ease;
 
+    @include respond(big-desktop) {
+      margin-top: 2rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -129,6 +143,10 @@
       height: 3px;
       background-color: $main-black-color;
       display: inline-block;
+
+      @include respond(big-desktop) {
+        width: 2rem;
+      }
     }
 
     &::before,
