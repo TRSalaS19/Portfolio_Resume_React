@@ -1,53 +1,127 @@
 .topBrand {
   background-color: $main-black-color;
   color: $main-yellow-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  padding-top: 10px;
-  height: 5vh;
+  height: 17.5vh;
+  font-size: $default-font;
 
-  &__brand-logo {
+  @include respond(big-desktop) {
+    height: 15vh;
+  }
+
+  @include respond(tab-land) {
+    height: 15vh;
+  }
+  @include respond(tab-port) {
+    height: 20vh;
+  }
+
+  &__info-container {
     display: flex;
-    flex-direction: column;
-    justify-self: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 2rem;
-    font-size: 2rem;
-    border-bottom: 2px solid $main-yellow-color;
+    padding: 3rem 3rem;
 
+    @include respond(tab-land) {
+      padding: 5rem 5rem;
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      letter-spacing: 0.2rem;
+      font-size: 3rem;
+      padding: 1.5rem 3rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      letter-spacing: 0.2rem;
+      font-size: 2.5rem;
+    }
+
+    .topBrand__info-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border-bottom: 2px solid $main-yellow-color;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1) skewY(5deg);
+        @include header-box-shadow;
+        border: none;
+      }
+
+      .header-icon {
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        transition: all 0.5 ease;
+
+        &:hover {
+          transform: scale(1.1) skewY(5deg);
+
+          @include respond(phone) {
+            transform: scale(1.1);
+          }
+          @include respond(tab-port) {
+            transform: scale(0.9);
+          }
+        }
+      }
+
+      @include respond(phone) {
+        padding: 0.5rem;
+        border: none;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+
+      @include respond(tab-port) {
+        padding: 1rem;
+        border: none;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+  .brand-logo {
     transition: all 0.2 ease;
     cursor: pointer;
 
     &:hover {
       transform: scale(1.1) skewY(-5deg);
-      box-shadow: 0 0.5rem 1rem rgba($main-yellow-color, 1);
+
+      @include respond(phone) {
+        transform: scale(0.9);
+      }
+
+      @include respond(tab-port) {
+        transform: scale(0.9);
+      }
     }
   }
 
-  &__info-container {
-    font-size: $default-font;
-    display: flex;
-    border-bottom: 3px solid $main-yellow-color;
-    transition: all 0.2 ease;
-    cursor: pointer;
-
+  .middle-item {
     &:hover {
-      transform: scale(1.1) skewY(5deg);
-      box-shadow: 0 0.5rem 1rem rgba($main-yellow-color, 1);
+      transform: scale(1.1);
     }
-
-    .header-icon {
-      margin-right: 5px;
+    @include respond(phone) {
+      transform: scale(0.9);
     }
-    &:last-child {
-      margin-right: 2.5rem;
-      transition: all 0.5 ease;
-
-      &:hover {
-        transform: scale(1.1) skewY(-5deg);
-      }
+    @include respond(tab-port) {
+      transform: scale(0.9);
     }
   }
 }

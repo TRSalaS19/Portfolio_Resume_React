@@ -105,7 +105,7 @@
 
         input {
           margin-bottom: 2rem;
-          font-size: 2rem;
+          font-size: $default-font;
           height: 3rem;
           border-radius: 5px;
           text-align: center;
@@ -118,7 +118,7 @@
         }
         textarea {
           margin-bottom: 2rem;
-          font-size: 2rem;
+          font-size: $default-font;
           height: 10rem;
           border-radius: 5px;
           text-align: center;

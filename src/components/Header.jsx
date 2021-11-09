@@ -33,13 +33,13 @@ const Header = () => {
           />
         </div>
         <div className="heading__right-text">
-          <h2>Hello, Welcome to my Portfolio</h2>
-          <span>
-            My name is <h1>Gustavo Salas</h1>
+          <h3>Hello, Welcome to my Portfolio</h3>
+          <span className="intro-span">
+            My name is <h2>Gustavo Salas</h2>
           </span>
-          <h3>
+          <p>
             I am a <span className="r-span" ref={textRef}></span>
-          </h3>
+          </p>
         </div>
       </div>
     </div>

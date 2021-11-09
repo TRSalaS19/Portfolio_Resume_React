@@ -1,11 +1,11 @@
 .about-me {
   color: $main-yellow-color;
-  height: 110vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
 
   &__top {
-    height: 75%;
+    flex: 0.45;
     width: calc(100% - 2px);
     background-color: $main-black-color;
     display: flex;
@@ -14,11 +14,26 @@
     text-align: center;
     border: 1px solid $main-yellow-color;
   }
-  &__heading {
-    font-size: 4rem;
+  .about-me__heading {
     text-align: center;
 
     p {
+      font-size: 3.5rem;
+      background-image: radial-gradient(
+        closest-side,
+        $color-white,
+        $main-yellow-color 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+    }
+
+    h2 {
       font-size: 4rem;
       background-image: radial-gradient(
         closest-side,
@@ -28,23 +43,23 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+
+      @include respond(tab-land) {
+        font-size: 5.5rem;
+      }
     }
 
-    h2 {
-      font-size: 7rem;
-      background-image: radial-gradient(
-        closest-side,
-        $color-white,
-        $main-yellow-color 50%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+    span {
+      font-size: 2rem;
+
+      @include respond(tab-land) {
+        font-size: 3rem;
+      }
     }
   }
   &__intro {
-    font-size: 2.5rem;
     padding: 0 25rem;
+    font-size: 2rem;
 
     a {
       color: $color-white;
@@ -55,49 +70,54 @@
         color: $main-yellow-color;
       }
     }
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      padding: 0 10rem;
+    }
   }
 
   &__bottom {
+    flex: 0.55;
     background-image: radial-gradient(
       $main-yellow-color,
-      $main-black-color 50%
+      $main-black-color 75%
     );
     height: 100%;
-  }
-
-  &__bottom-container {
     display: flex;
     justify-content: center;
-    height: 100%;
-    // width: 25%;
+
+    @include respond(tab-land) {
+      flex: 0.9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: radial-gradient(
+        $main-yellow-color,
+        $main-black-color 80%
+      );
+    }
   }
 
   &__skills-column {
     background-color: $main-black-color;
-    width: 25%;
+    width: 30%;
     color: $color-white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    // border-radius: 5px;
-    font-size: $default-font;
     border: 1px solid $main-yellow-color;
+
+    @include respond(tab-land) {
+      width: 65%;
+      height: 100%;
+    }
   }
 
   &__skills-icon {
-    font-size: 4rem;
-    background-image: radial-gradient(
-      closest-side,
-      $color-white,
-      $main-yellow-color
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  &__skills-heading {
     font-size: 3rem;
     background-image: radial-gradient(
       closest-side,
@@ -107,16 +127,40 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+  }
+  &__skills-heading {
+    font-size: 2rem;
+    background-image: radial-gradient(
+      closest-side,
+      $color-white,
+      $main-yellow-color
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
   }
 
   &__skills-description {
+    font-size: 1.5rem;
     color: $color-white;
     padding: 1rem 2rem;
-    font-size: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
   }
   &__skills-languages {
     h4 {
-      font-size: 3rem;
+      font-size: 2rem;
       background-image: radial-gradient(
         closest-side,
         $color-white,
@@ -125,16 +169,22 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-    }
 
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+      }
+    }
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
     }
   }
   &__skills-tools {
     h4 {
-      font-size: 3rem;
-      margin: 1rem 0;
+      font-size: 2rem;
       background-image: radial-gradient(
         closest-side,
         $color-white,
@@ -143,12 +193,20 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+      }
     }
   }
 
   &__skills-tool-item {
     list-style: none;
-    font-size: 2rem;
     color: $color-white;
+    font-size: 1.5rem;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
   }
 }
