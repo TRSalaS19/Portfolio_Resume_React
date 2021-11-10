@@ -36,7 +36,7 @@ function Footer() {
           </div>
           <div className="footer__info-container">
             <i className="fas fa-at footer__contact-icon"></i>
-            <p>GRuiSalas@icloud.com</p>
+            <p>GRuiSalas@iCloud.com</p>
           </div>
           <div className="footer__copyright">
             Built by Gustavo Salas &copy; {new Date().getFullYear()}.
@@ -51,7 +51,7 @@ function Footer() {
             <form action="mailto:gruiz0803@icloud.com" onSubmit={handleSubmit}>
               <input type="text" placeholder="Email" />
               <textarea placeholder="Message"></textarea>
-              <button type="submit">Send Message</button>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>

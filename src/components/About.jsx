@@ -13,13 +13,13 @@ function About() {
         </div>
         <div className="about-me__intro">
           <p>
-            I am a Full-Stack Web Developer. My Journey in Tech started in 2020.
-            I started a bootcamp With
+            I am a Jr. Full-Stack Web Developer. My Journey in Tech started in
+            2020. I started a bootcamp With
             <a href="https://devcamp.com/"> Bottega University </a>. I completed
-            the course in 2021. I am now looking for project opportunties as
+            the course in 2021. I am now looking for project opportunities as
             well as work to help improve and better my knowledge, skills and
             understanding in the rapidly changing field. Please see below for
-            langueges I have developed with and projects i have completed.
+            langueges I have developed with and projects I have completed.
           </p>
         </div>
       </div>
@@ -33,8 +33,9 @@ function About() {
           </div>
           <div className="about-me__skills-description">
             <p>
-              My passion is coding programs from scratch, I also enjoy bringing
-              design and ideas to life through Technology.
+              My passion is coding programs from scratch, as well as working
+              together with others to create new ideas and designs. I also enjoy
+              bringing design and ideas to life through Technology.
             </p>
           </div>
           <div className="about-me__skills-languages">
@@ -46,6 +47,7 @@ function About() {
             <ul className="about-me__skills-tool-item">
               <li>React</li>
               <li>Atom</li>
+              <li>Redux/ReactRedux</li>
               <li>BootStrap</li>
               <li>ESJ6</li>
               <li>GitHub</li>
@@ -63,8 +65,10 @@ function About() {
           </div>
           <div className="about-me__skills-description">
             <p>
-              Making databases and handling data to databases is also a passion
-              of mine and a skill I am currently working on improving
+              Along with the Front-End work, I also have experience with working
+              with backend libraries. I mostly have experience with MongoDb but
+              also have some experience with SQL databases as well which I am
+              always looking to improve in with new projects.
             </p>
           </div>
           <div className="about-me__skills-languages">
@@ -77,6 +81,7 @@ function About() {
               <li>NodeJs</li>
               <li>Mongoose</li>
               <li>Express</li>
+              <li>Redux/ReactRedux</li>
             </ul>
           </div>
         </div>
