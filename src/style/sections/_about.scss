@@ -118,6 +118,7 @@
     @include respond(phone) {
       flex: 1;
       height: 100%;
+      position: relative;
     }
   }
 
@@ -156,6 +157,7 @@
     @include respond(phone) {
       visibility: hidden;
       width: 0;
+      position: absolute;
     }
   }
   &__skills-heading {

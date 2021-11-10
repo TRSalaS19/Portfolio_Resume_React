@@ -31,9 +31,11 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__info-container">
+            <i className="fas fa-phone-volume footer__contact-icon"></i>
             <p>510-417-6757</p>
           </div>
           <div className="footer__info-container">
+            <i className="fas fa-at footer__contact-icon"></i>
             <p>GRuiSalas@icloud.com</p>
           </div>
           <div className="footer__copyright">
